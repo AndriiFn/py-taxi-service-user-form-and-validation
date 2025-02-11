@@ -26,7 +26,7 @@ class DriverLicenseUpdateForm(forms.ModelForm):
         return license_number
 
 
-class DriverCreationForm(forms.ModelForm):
+class DriverCreationForm(UserCreationForm):
     license_number = forms.CharField(max_length=8)
 
     class Meta:
